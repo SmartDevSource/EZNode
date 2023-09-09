@@ -8,7 +8,11 @@ EZNode est un outil puissant qui vous permet de créer rapidement des applicatio
 
 ```bash
 npx create-eznode MonApplication
+cd MonApplication
+node server
 ```
+
+:warning: Un projet basique est déjà paramétré et prêt à être testé par défaut, les explications ci-dessous ne sont pas obligatoirement indispensables :warning:
 
 :hammer_and_wrench: Quelques fonctions utiles
 

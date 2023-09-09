@@ -12,33 +12,61 @@ npx create-eznode MonApplication
 
 :hammer_and_wrench: Quelques fonctions utiles
 
-Définir la page racine à envoyer au client lorsqu'il arrive sur le site :page_with_curl:
+Définir la page racine à envoyer au client lorsqu'il arrive sur le site
 
 ```javascript
 network.setRootPage("pages/index.html");
 ```
 
-Lancez le serveur sur le port de votre choix (par exemple, 3000) :rocket:
+Lancez le serveur sur le port de votre choix (par exemple, 3000)
 ```javascript
 network.start(3000);
 ```
 
-Créez une boucle d'écoute pour la réception des sockets :ear:
-javascript
-Copy code
+Créez une boucle d'écoute pour la réception des sockets, explication détaillée :
+
+```javascript
 network.handleReception((data) => {
-  // Votre code de traitement ici
-  // Par exemple, accédez aux données reçues comme suit :
   const header = data.header; // Dénomination de la donnée
   const socket = data.socket; // Socket pour communiquer avec le client
   const content = data.content; // Contenu de la donnée (objet, tableau, etc.)
-  
-  // Ajoutez votre logique de traitement ici...
 });
-Grâce à EZNode, le traitement des données côté serveur devient simple et efficace.
+```
+Un élément reçu peut être décortiqué comme suit :
+```javascript
+  data = {header: "xposition", socket: socket, content: "237"}
+
+  ou par exemple si on réceptionne un objet :
+
+  data = {header: "coordinates", socket: socket, content: {"xposition": 234, yposition: 179}}
+```
+
+Utilisation concrète :
+```javascript
+network.handleReception((data)=>{
+    switch(data.header){
+        case "close":
+            console.log("Le serveur vient d'être déconnecté.");
+        break;
+        case "connection":
+            console.log("Client connecté, l'ID unique de sa socket : "+data.socket.id);
+        break;
+        case "disconnect":
+            console.log("Déconnection d'un client, l'ID de sa socket était : "+data.socket.id);
+        break;
+        case "message":
+            console.log(`\x1b[33mMessage reçu : "${data.content}" \x1b[0m`);
+            data.socket.emit("message", `Le serveur vous renvoi votre message : "${data.content}"`);
+        break;
+    }
+```
+
+Vous pouvez rajouter à loisir autant de case dans votre boucle switch avec les noms de headers que vous désirez ( il faudra que le client emploi les mêmes noms d'headers afin que l'échange des données puisse s'effectuer ).
+
+A savoir, par défaut, il ne faut PAS supprimer ou modifier les noms des 3 premiers éléments présents initialement au début de la boucle, à savoir "close", "connection" et "disconnect" qui sont déjà incorporés dans le package.
 
 :bulb: Exemple d'élément reçu
-Un élément reçu peut être décortiqué comme suit :
+
 
 javascript
 Copy code

@@ -77,6 +77,7 @@ Si vous souhaitez contribuer à l'amélioration de EZNode, n'hésitez pas à sou
 Projet en phase de lancement développé par Emmanuel Beaugendre.
 
 :scroll: Licence
+
 Ce projet est sous licence MIT. Consultez le fichier LICENSE pour plus d'informations.
 
 © 2023 EZNode. Tous droits réservés.

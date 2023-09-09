@@ -41,7 +41,7 @@ Un élément reçu peut être décortiqué comme suit :
   data = {header: "coordinates", socket: socket, content: {"xposition": 234, yposition: 179}}
 ```
 
-Utilisation concrète :
+:bulb: Une situation concrète :
 ```javascript
 network.handleReception((data)=>{
     switch(data.header){
@@ -54,9 +54,10 @@ network.handleReception((data)=>{
         case "disconnect":
             console.log("Déconnection d'un client, l'ID de sa socket était : "+data.socket.id);
         break;
-        case "message":
-            console.log(`\x1b[33mMessage reçu : "${data.content}" \x1b[0m`);
-            data.socket.emit("message", `Le serveur vous renvoi votre message : "${data.content}"`);
+        case "username":
+            console.log(`Vous avez reçu un nom d'utilisateur : ${data.content} !`);
+            // On répond poliment à l'émetteur de la sorte //
+            data.socket.emit("hello", `Salut à toi ${data.content} !`);
         break;
     }
 ```
@@ -65,15 +66,6 @@ Vous pouvez rajouter à loisir autant de case dans votre boucle switch avec les 
 
 A savoir, par défaut, il ne faut PAS supprimer ou modifier les noms des 3 premiers éléments présents initialement au début de la boucle, à savoir "close", "connection" et "disconnect" qui sont déjà incorporés dans le package.
 
-:bulb: Exemple d'élément reçu
-
-
-javascript
-Copy code
-data.header = "username"; // Dénomination de la donnée
-data.socket = socket; // Socket pour communiquer avec le client
-data.content = "Thomas"; // Contenu de la donnée (exemple : nom d'utilisateur)
-:handshake: Contribuer
 Si vous souhaitez contribuer à l'amélioration de EZNode, n'hésitez pas à soumettre des pull requests ou à signaler des problèmes dans notre repository GitHub.
 
 :scroll: Licence

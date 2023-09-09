@@ -10,6 +10,8 @@ EZNode est un outil puissant qui vous permet de créer rapidement des applicatio
 npx create-eznode MonApplication
 cd MonApplication
 node server
+
+Lancez votre navigateur et lancez la page http://localhost:3000/, vous pouvez communiquer avec le serveur et celui-ci vous répondra.
 ```
 
 :warning: Un projet basique est déjà paramétré et prêt à être testé par défaut, les étapes détaillées ci-dessous ne sont pas indispensables :warning:

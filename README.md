@@ -1,5 +1,3 @@
-markdown
-Copy code
 # EZNode - Créez des applications Client / Serveur NODE en un clin d'œil ! :rocket:
 
 ![EZNode Logo](https://example.com/eznode-logo.png)

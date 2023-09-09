@@ -12,7 +12,7 @@ cd MonApplication
 node server
 ```
 
-:warning: Un projet basique est déjà paramétré et prêt à être testé par défaut, les explications ci-dessous ne sont pas obligatoirement indispensables :warning:
+:warning: Un projet basique est déjà paramétré et prêt à être testé par défaut, les étapes détaillées ci-dessous ne sont pas indispensables :warning:
 
 :hammer_and_wrench: Quelques fonctions utiles
 

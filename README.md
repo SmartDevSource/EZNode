@@ -73,7 +73,4 @@ Ce projet est sous licence MIT. Consultez le fichier LICENSE pour plus d'informa
 
 © 2023 EZNode. Tous droits réservés.
 
-vbnet
-Copy code
-
-Vous pouvez copier ce texte Markdown et le coller dans un fichier README.md 
+Projet en phase de lancement développé par Emmanuel Beaugendre

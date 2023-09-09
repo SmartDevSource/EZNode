@@ -10,9 +10,7 @@ EZNode est un outil puissant qui vous permet de créer rapidement des applicatio
 npx create-eznode MonApplication
 ```
 
-:hammer_and_wrench: Utilisation
-EZNode simplifie le développement d'applications Client / Serveur en fournissant des fonctions côté serveur faciles à utiliser. :computer:
-Voici comment vous pouvez commencer :
+:hammer_and_wrench: Quelques fonctions utiles
 
 Définir la page racine à envoyer au client lorsqu'il arrive sur le site :page_with_curl:
 

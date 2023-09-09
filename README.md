@@ -16,16 +16,20 @@ npx create-eznode MonApplication
 Copy code
 npx create-eznode MonApplication
 :hammer_and_wrench: Utilisation
-EZNode simplifie le développement d'applications Client / Serveur en fournissant des fonctions côté serveur faciles à utiliser. Voici comment vous pouvez commencer :
+EZNode simplifie le développement d'applications Client / Serveur en fournissant des fonctions côté serveur faciles à utiliser. 
+Voici comment vous pouvez commencer :
 
 Définir la page racine à envoyer au client lorsqu'il arrive sur le site :page_with_curl:
-javascript
-Copy code
+
+```javascript
 network.setRootPage("pages/index.html");
+```
+
 Lancez le serveur sur le port de votre choix (par exemple, 3000) :rocket:
-javascript
-Copy code
+```javascript
 network.start(3000);
+```
+
 Créez une boucle d'écoute pour la réception des sockets :ear:
 javascript
 Copy code

@@ -44,7 +44,7 @@ javascript
 Copy code
 data.header = "username"; // Dénomination de la donnée
 data.socket = socket; // Socket pour communiquer avec le client
-data.content = "JohnDoe"; // Contenu de la donnée (exemple : nom d'utilisateur)
+data.content = "Thomas"; // Contenu de la donnée (exemple : nom d'utilisateur)
 :handshake: Contribuer
 Si vous souhaitez contribuer à l'amélioration de EZNode, n'hésitez pas à soumettre des pull requests ou à signaler des problèmes dans notre repository GitHub.
 

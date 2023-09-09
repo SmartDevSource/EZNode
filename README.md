@@ -8,12 +8,11 @@ EZNode est un outil puissant qui vous permet de créer rapidement des applicatio
 
 Pour installer EZNode, vous pouvez utiliser npm ou npx, en fonction de vos besoins :
 
-### Installation globale via npm (recommandé) :computer:
+### Installation globale via npx (recommandé) :computer:
 
 ```bash
-npm install -g create-eznode
-Installation locale via npx :inbox_tray:
-bash
+npx create-eznode MonApplication
+```
 Copy code
 npx create-eznode MonApplication
 :hammer_and_wrench: Utilisation

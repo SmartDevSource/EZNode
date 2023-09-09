@@ -64,13 +64,13 @@ network.handleReception((data)=>{
 
 Vous pouvez rajouter à loisir autant de case dans votre boucle switch avec les noms de headers que vous désirez ( il faudra que le client emploi les mêmes noms d'headers afin que l'échange des données puisse s'effectuer ).
 
-A savoir, par défaut, il ne faut PAS supprimer ou modifier les noms des 3 premiers éléments présents initialement au début de la boucle, à savoir "close", "connection" et "disconnect" qui sont déjà incorporés dans le package.
+A savoir, par défaut, il ne faut **JAMAIS** supprimer ou modifier les noms des 3 premiers éléments présents initialement au début de la boucle, à savoir **"close"**, **"connection"** et **"disconnect"** qui sont déjà incorporés dans le package.
 
 Si vous souhaitez contribuer à l'amélioration de EZNode, n'hésitez pas à soumettre des pull requests ou à signaler des problèmes dans notre repository GitHub.
+
+Projet en phase de lancement développé par Emmanuel Beaugendre.
 
 :scroll: Licence
 Ce projet est sous licence MIT. Consultez le fichier LICENSE pour plus d'informations.
 
 © 2023 EZNode. Tous droits réservés.
-
-Projet en phase de lancement développé par Emmanuel Beaugendre

@@ -4,19 +4,14 @@
 
 EZNode est un outil puissant qui vous permet de créer rapidement des applications basées sur Node.js avec une architecture Client / Serveur. En une seule commande, vous pouvez générer un projet minimaliste et fonctionnel, prêt à être utilisé.
 
-## :package: Installation
-
-Pour installer EZNode, vous pouvez utiliser npm ou npx, en fonction de vos besoins :
-
-### Installation globale via npx (recommandé) :computer:
+### Installation rapide via npx (recommandé) :rocket:
 
 ```bash
 npx create-eznode MonApplication
 ```
-Copy code
-npx create-eznode MonApplication
+
 :hammer_and_wrench: Utilisation
-EZNode simplifie le développement d'applications Client / Serveur en fournissant des fonctions côté serveur faciles à utiliser. 
+EZNode simplifie le développement d'applications Client / Serveur en fournissant des fonctions côté serveur faciles à utiliser. :computer:
 Voici comment vous pouvez commencer :
 
 Définir la page racine à envoyer au client lorsqu'il arrive sur le site :page_with_curl:

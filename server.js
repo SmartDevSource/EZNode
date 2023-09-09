@@ -18,8 +18,8 @@ network.handleReception((data)=>{
             console.log("Déconnection d'un client, l'ID de sa socket était : "+data.socket.id);
         break;
         case "message":
-            console.log(`Message reçu : "${data.content}"` );
-            data.socket.emit("message", `J'ai bien reçu ton message qui est "${data.content}".`);
+            console.log(`\x1b[33mMessage reçu : "${data.content}" \x1b[0m`);
+            data.socket.emit("message", `Le serveur vous renvoi votre message : "${data.content}"`);
         break;
     }
 })

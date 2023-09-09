@@ -1,6 +1,6 @@
 # EZNode - Créez des applications Client / Serveur NODE en un clin d'œil ! :rocket:
 
-![EZNode Logo](https://example.com/eznode-logo.png)
+![EZNode Logo](https://image.noelshack.com/fichiers/2023/36/6/1694287497-eznode.png)
 
 EZNode est un outil puissant qui vous permet de créer rapidement des applications basées sur Node.js avec une architecture Client / Serveur. En une seule commande, vous pouvez générer un projet minimaliste et fonctionnel, prêt à être utilisé.
 
